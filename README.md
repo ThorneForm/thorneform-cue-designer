@@ -4,6 +4,8 @@
 
 Desktop application for designing synchronized LED cue tracks for wearable props, costumes, and custom electronics.
 
+ThorneForm Cue Designer was created to simplify the process of synchronizing LED lighting effects with audio for wearable props and costumes. Instead of manually editing timing values, designers can visually create, preview, save, and export lighting sequences for Cardputer-based playback.
+
 ---
 
 ## Features
@@ -17,16 +19,45 @@ Desktop application for designing synchronized LED cue tracks for wearable props
 
 ---
 
+## Current Capabilities
+
+- Load MP3 audio
+- Display waveform
+- Create LED cue points
+- Smooth brightness interpolation
+- Real-time playback preview
+- Save and load .tfcue projects
+- Export JSON for Cardputer playback
+
+---
+
 ## Status
 
 🚧 Version 1.0 Beta
 
 ---
 
+## Quick Start
+
+```bash
+pip install -r requirements.txt
+python thorneform_cue_designer.py
+```
+
+---
+
+## Screenshots
+
+### Main Editor
+
+![Main Window](images/main_window.png)
+
+---
+
 ## Roadmap
 
-- Windows executable
-- macOS application
-- Automatic GitHub Releases
+- Automatic Windows builds
+- Automatic macOS builds
 - Multiple LED channels
-- Multiple audio cue tracks
+- Audio markers
+- Undo / Redo
