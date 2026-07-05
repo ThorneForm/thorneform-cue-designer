@@ -35,5 +35,16 @@
 ✓ Export
 ---
 
+## Version 0.5 - Complete
+- created executible windows file
+- uploaded windows package to github
+
+---
+
+## Version 0.6 - in development
+-create MacOS version
+
+---
+
 ## Future Ideas
 - Requested features after real-world testing

@@ -1,0 +1,16 @@
+# Build output
+build/
+dist/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# PyInstaller
+*.spec
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
