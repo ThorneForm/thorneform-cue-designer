@@ -334,10 +334,21 @@ def export_timeline():
 
     os.makedirs("exports", exist_ok=True)
 
-    with open("exports/led_timeline.json", "w") as file:
+    file_path = filedialog.asksaveasfilename(
+        title="Export Cue JSON",
+        initialdir="exports",
+        initialfile=current_song_name.replace(".mp3", "_cue.json"),
+        defaultextension=".json",
+        filetypes=[("JSON Files", "*.json")]
+    )
+
+    if not file_path:
+        return
+
+    with open(file_path, "w") as file:
         json.dump(export_data, file, indent=4)
 
-    print("Exported: exports/led_timeline.json")
+    print(f"Exported: {file_path}")
 
 def build_project_data():
     return {
